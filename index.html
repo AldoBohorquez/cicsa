@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CICSA Energy · Propuestas de sitio web</title>
+  <meta name="description" content="Cuatro propuestas de diseño para el sitio web de CICSA Energy. CosmoSoftWorks.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="CICSA Energy · Propuestas de sitio web">
+  <meta property="og:description" content="Cuatro propuestas de diseño para elegir. CosmoSoftWorks.">
+  <meta property="og:url" content="https://aldobohorquez.github.io/cicsa/">
+  <meta property="og:image" content="https://aldobohorquez.github.io/cicsa/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='%230b1220'/%3E%3Cpath fill='%23ffd147' d='M20.4 7.5 11.6 20h5.7l-2 8.5 9.2-12.6h-5.9z'/%3E%3C/svg%3E">
+  <!--
+    Portada del sitio de propuestas (GitHub Pages, repo «cicsa»). Las propuestas viven en 1/, 2/, 3/ y 4/ y se regeneran con armar.py.
+    Las miniaturas están en img/propuesta-N.jpg. Esta página no usa nada externo.
+  -->
+  <style>
+    :root { --bg: #0b1220; --bg2: #111a2e; --line: rgba(255,255,255,.1); --txt: #eef2f8; --mut: rgba(226,232,240,.66); --sun: #ffd147; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(900px 500px at 85% -10%, rgba(79,114,216,.35), transparent 60%), radial-gradient(700px 400px at 0% 110%, rgba(255,209,71,.12), transparent 60%), var(--bg); color: var(--txt); font: 400 16px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: clamp(28px, 5vw, 64px) clamp(18px, 4vw, 40px) 40px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; letter-spacing: -.01em; }
+    .marca svg { width: 30px; height: 30px; }
+    .marca span { font-weight: 400; color: var(--mut); }
+    .chip { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--mut); font-size: 13px; }
+    .chip i { width: 7px; height: 7px; border-radius: 50%; background: var(--sun); }
+    h1 { margin: clamp(40px, 7vw, 80px) 0 12px; font-size: clamp(36px, 5.4vw, 64px); line-height: 1.04; letter-spacing: -.035em; font-weight: 800; max-width: 16ch; }
+    h1 em { font-style: normal; color: var(--sun); }
+    .sub { color: var(--mut); max-width: 62ch; font-size: clamp(16px, 1.4vw, 18px); margin: 0; }
+    .grid { list-style: none; margin: clamp(36px, 5vw, 56px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card { display: grid; gap: 0; border-radius: 22px; overflow: hidden; background: var(--bg2); border: 1px solid var(--line); transition: transform .4s cubic-bezier(.22,.61,.36,1), border-color .3s, box-shadow .4s; }
+    .card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.28); box-shadow: 0 30px 60px -30px rgba(0,0,0,.8); }
+    .mini { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+    .mini img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform 1.2s cubic-bezier(.22,.61,.36,1); }
+    .card:hover .mini img { transform: scale(1.03); }
+    .num { position: absolute; left: 14px; top: 14px; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #fff; color: #0b1220; font-weight: 800; }
+    .info { padding: 18px 20px 20px; display: grid; gap: 6px; }
+    .info b { font-size: 19px; letter-spacing: -.01em; }
+    .info p { margin: 0; color: var(--mut); font-size: 14.5px; }
+    .ver { margin-top: 8px; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14.5px; color: var(--sun); }
+    .card:hover .ver span { transform: translateX(4px); }
+    .ver span { transition: transform .3s; }
+    footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--mut); font-size: 13px; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="marca"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="17" fill="none" stroke="#fff" stroke-width="1.4"/><path fill="#ffd147" d="M20.4 7.5 11.6 20h5.7l-2 8.5 9.2-12.6h-5.9z"/></svg>CICSA <span>Energy</span></span>
+      <span class="chip"><i></i> Propuestas de diseño · noviembre 2026</span>
+    </header>
+
+    <h1>Su nuevo sitio web, <em>en cuatro propuestas.</em></h1>
+    <p class="sub">Abra cada propuesta y recórrala completa. Dentro de cada una, la barra de abajo le permite saltar a otra para comparar. Los datos marcados «por confirmar» y las imágenes son provisionales hasta contar con la información y las fotos de CICSA.</p>
+
+    <ul class="grid">
+      <li><a class="card" href="1/">
+        <span class="mini"><img src="img/propuesta-1.jpg" alt="Vista de la propuesta 1" loading="lazy"><span class="num">1</span></span>
+        <span class="info"><b>Renovables</b><p>Fondo oscuro, ilustración animada y centro de aprendizaje. Enfoque en energías renovables, nuevas energías y licitaciones.</p><span class="ver">Ver propuesta <span>→</span></span></span>
+      </a></li>
+      <li><a class="card" href="2/">
+        <span class="mini"><img src="img/propuesta-2.jpg" alt="Vista de la propuesta 2" loading="lazy"><span class="num">2</span></span>
+        <span class="info"><b>Ejecutiva</b><p>Formal e institucional: azul marino, cobre y tipografía serif. Pensada para compras, licitaciones e industria.</p><span class="ver">Ver propuesta <span>→</span></span></span>
+      </a></li>
+      <li><a class="card" href="3/">
+        <span class="mini"><img src="img/propuesta-3.jpg" alt="Vista de la propuesta 3" loading="lazy"><span class="num">3</span></span>
+        <span class="info"><b>Creativa elegante</b><p>Clara y cálida, con un diagrama eléctrico como guía de la página. El punto medio entre las otras.</p><span class="ver">Ver propuesta <span>→</span></span></span>
+      </a></li>
+      <li><a class="card" href="4/">
+        <span class="mini"><img src="img/propuesta-4.jpg" alt="Vista de la propuesta 4" loading="lazy"><span class="num">4</span></span>
+        <span class="info"><b>Fotográfica</b><p>Moderna y luminosa, con imágenes grandes y tarjetas. Lista para mostrar fotos reales de obra.</p><span class="ver">Ver propuesta <span>→</span></span></span>
+      </a></li>
+    </ul>
+
+    <footer>
+      <span>Corporativo de Ingeniería y Construcción ABJO, S.A. de C.V. · CICSA Energy</span>
+      <span>Diseño: CosmoSoftWorks</span>
+    </footer>
+  </div>
+</body>
+</html>
