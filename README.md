@@ -12,6 +12,7 @@ Se publica en **https://aldobohorquez.github.io/cicsa/** (repositorio `AldoBohor
 
 - Cada propuesta lleva abajo una barra «☰ Propuestas · 1 2 3 4» para brincar entre ellas, y la etiqueta `noindex` para que Google no la indexe.
 - Las dos cosas las pone `armar.py`, que también recompila las cuatro con `--base-href ./`.
+- **Derechos:** © 2026 CosmoSoftWorks, todos los derechos reservados (ver `LICENSE`). Ser público no da permiso de usar el diseño ni el código.
 - Ojo: el repositorio es público, así que cualquiera con el enlace puede ver las propuestas. No hay datos privados: todo sale de la constancia fiscal.
 
 ## Publicar por primera vez
